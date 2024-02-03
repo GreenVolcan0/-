@@ -11,6 +11,8 @@ for el in a:
         el[5] = str(float(el[3])*float(el[4]))
 
 f = open("products_new.csv", 'w')
+for el in a:
+    f.write(','.join(el)+'\n')
 
 summa = 0
 for el in a:
